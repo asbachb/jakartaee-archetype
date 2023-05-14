@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+    xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+    name="jakartaee-archetype">
+    
+    <requiredProperties>
+        <requiredProperty key="javaVersion" >
+            <defaultValue>17</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="jakartaEEVariant" >
+            <defaultValue>jakartaee</defaultValue>
+            <validationRegex>jakartaee|jakartaee-web|jakartaee-core</validationRegex>
+        </requiredProperty>
+        <requiredProperty key="jakartaEEVersion" >
+            <defaultValue>10.0.0</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+    
+    <fileSets>
+        <fileSet>
+            <directory>src/main/java</directory>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>src/main/resources</directory>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory>src/main/webapp</directory>
+        </fileSet>
+        <fileSet>
+            <directory>src/test/java</directory>
+        </fileSet>
+        <fileSet>
+            <directory>src/test/resources</directory>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
