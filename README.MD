@@ -1,19 +1,3 @@
-# Description
-
-This is a maven archetype which generates a Jakarta EE web application skeleton. All variants will generate a `web.xml` and `beans.xml`. The variants `jakartaee` and `jakartaee-web` create a `persistence.xml` additionally.
-
-# Usage
-
-Note: Currently this archetype is not available in maven central. So first thing do is install it:
-```bash
-mvn install
-```
-
-Afterwards you should be able to create a new project:
-```bash
-mvn archetype:generate -DarchetypeGroupId=it.impl -DarchetypeArtifactId=jakartaee-war-archetype -DarchetypeVersion=1.0.0-SNAPSHOT
-```
-
 # Parameters
 
 The archetype can be configured via several system properties:
@@ -34,7 +18,7 @@ The archetype can be configured via several system properties:
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
      
-    <groupId>it.impl</groupId>
+    <groupId>com.groupid</groupId>
     <artifactId>jakartaee-project</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
